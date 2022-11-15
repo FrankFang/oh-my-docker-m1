@@ -1,7 +1,7 @@
-Oh My Docker
+Oh My Docker For M1
 ===
 
-你的第一个 Docker 开发环境。
+你的第一个 M1 Docker 开发环境。
 
 **[视频教程](https://www.bilibili.com/video/BV1LP4y1W7nw)**
 
