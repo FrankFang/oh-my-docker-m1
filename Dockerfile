@@ -1,11 +1,11 @@
-FROM archlinux:base-devel
+FROM lopsided/archlinux:devel
 
 WORKDIR /tmp
 ENV SHELL /bin/bash
 ADD mirrorlist /etc/pacman.d/mirrorlist
 ENV UPDATE_TIME 20220708T10:55:00+08:00
 RUN yes | pacman -Syu
-RUN yes | pacman -S git zsh
+RUN yes | pacman -S git zsh procps
 RUN mkdir -p /root/.config
 VOLUME [ "/root/.config", "/root/repos", "/root/.vscode-server/extensions", "/root/go/bin", "/var/lib/docker", "/root/.local/share/pnpm", "/usr/local/rvm/gems", "/root/.ssh" ]
 # end
